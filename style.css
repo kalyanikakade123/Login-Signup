@@ -1,0 +1,242 @@
+html , body {
+    border: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.hero {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://www.seekpng.com/png/full/29-299445_beautiful-corner-layout-flower-border-png-flower-border.png");
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-size: contain;
+}
+
+.mainContainer {
+    position: relative;
+    display: flex;
+    background:white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
+    border-radius: 12px;
+    margin: 0;
+    padding: 0;
+    min-height: 610px;
+    width: 95vw;
+    max-width: 1100px;
+}
+.sect1 {
+    flex: 1;
+    background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:3px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    padding: 18px;
+    color: white;
+
+}
+.info h1 {
+    color: black;
+    text-indent: 0px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(255, 147, 165);
+    font-size: 50px;
+    font-family:  Georgia, serif;
+    font-weight: 600;
+    font-style: italic;
+    font-variant: small-caps;
+}
+.info p {
+    color: #290b50;
+    font-size: xx-large;
+    font-weight: 350;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(191, 52, 209);
+}
+.info .knowMore{
+    display: grid;
+    margin: auto;
+    padding: 15px;
+    font-size: 25px;
+    font-family: Georgia, serif;
+    background: linear-gradient(to bottom right, #3bf8df 0%, #902eff 100%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.info .knowMore:hover{
+    border-radius: 50px;
+    border-inline-style: groove;
+    writing-mode: horizontal-tb;
+    direction: rtl;
+    padding: 14px;
+    font-size: 23px;
+}
+.logo h3{
+    margin-bottom: auto;
+    color: darkred;
+    font-size: x-large;
+}
+.logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding:10px;
+    margin-left:10px;
+}
+.sect2{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://www.nicepng.com/png/full/34-344603_65-flower-border-corner-png.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.profileSection {
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile img {
+    width: 120px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin:10px 0px 20px 0px;
+}
+.btns {
+    text-align: center;
+}
+.btns button{
+    background: white;
+    border: 2px solid #e4e4e4;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 12px 20px;
+    margin: 8px;
+    margin-bottom: 0px;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+.btns .active {
+    border-bottom: 2px solid #fff;
+}
+.formContainer {
+    width: 90%;
+    max-width: 380px;
+    height:350px;
+    display: flex;
+    justify-content: center;
+    border:2px solid #e4e4e4;
+    border-radius: 8px;
+}
+.formContainer form{
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 8px;
+}
+
+.inputContainer {   
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    margin: 4px;
+    width: 100%;
+    padding: 2px;
+}
+.inputContainer input{
+    border:none;
+    border-bottom: 2px solid #e4e4e4;
+    width: 90%;
+    margin-top: 5px;
+    text-align: center;
+    outline: none;
+    padding: 1px;
+    background: rgba(255, 255, 255, 0.664);
+}
+.remember{
+    flex-direction: row-reverse;
+    text-align: center;
+}
+.remember label {
+    width: 140px;
+    font-size: 20px;
+}
+.remember input{
+    width: 10px;   
+}
+.btn input {
+    color: #fff;
+    background-color: #290b50;
+    padding: 10px;
+    width: 50%;
+    border:none;
+    border-radius: 8px;
+}
+.forget a{
+    color: rgb(0, 3, 22);
+    text-decoration: none;
+}
+.forget a:hover{
+    color: red! important;
+}
+.btn input {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn input:hover{
+    border-radius: 50px;
+    background-color: rgb(155, 99, 99);
+}
+@media only screen and (max-width: 725px) {
+    body{
+        border: 0;
+        margin: 0px;
+        box-sizing: border-box;
+  }
+  .hero{
+    background-image: none;
+  }
+  .sect1{
+      display: none;
+  }
+  .formContainer{
+      margin-bottom: 2px;
+  }
+  .logo{
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 498px){
+    .sect2{
+        /* background: none; */
+        background-image: url("https://static8.depositphotos.com/1157310/889/v/600/depositphotos_8894419-stock-illustration-pastel-tones-bubble-background.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .btns button{
+        background-color: rgb(170, 216, 231,0.1);
+    }
+}
